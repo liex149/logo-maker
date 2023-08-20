@@ -40,20 +40,18 @@ function initialize() {
         .then((response) => {
             if (response.shape == 'square') {
                 const mySquare = new Square(response.shapecolor, response.textcolor, response.letters);
-                writeToFile(`./examples/logo.svg`, mySquare.render())
+                writeToFile(`./examples/${Math.random()}.svg`, mySquare.render())
             } else if (response.shape == 'circle') {
                 const myCircle = new Circle(response.shapecolor, response.textcolor, response.letters);
-                writeToFile(`./examples/logo.svg`, myCircle.render())
+                writeToFile(`./examples/${Math.random()}.svg`, myCircle.render())
             } else {
               
                 const myTriangle = new Triangle(response.shapecolor, response.textcolor, response.letters);
-                writeToFile(`./examples/logo.svg`, myTriangle.render())
+                writeToFile(`./examples/${Math.random()}.svg`, myTriangle.render())
 
 
             }
         })
 
 }
-
-
 initialize();
