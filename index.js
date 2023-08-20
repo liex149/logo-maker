@@ -16,20 +16,18 @@ function initialize() {
         .prompt([
             {
                 type: 'input',
-                message: 'Please enter 3 letters',
+                message: 'Please enter 3 letters (upper, lower, or both)',
                 name: 'letters',
             },
             {
-                type: 'list',
-                message: 'Pick a color',
+                type: 'input',
+                message: 'Pick a color for the text',
                 name: 'textcolor',
-                choices: ['red', 'green', 'blue', 'yellow'],
             },
             {
-                type: 'list',
-                message: 'Pick a color',
+                type: 'input',
+                message: 'Pick a color for the shape',
                 name: 'shapecolor',
-                choices: ['red', 'green', 'blue', 'yellow'],
             },
             {
                 type: 'list',
@@ -41,7 +39,6 @@ function initialize() {
         ])
         .then((response) => {
             if (response.shape == 'square') {
-                console.log('you are here')
                 const mySquare = new Square(response.shapecolor, response.textcolor, response.letters);
                 writeToFile(`./examples/logo.svg`, mySquare.render())
             } else if (response.shape == 'circle') {
