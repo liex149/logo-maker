@@ -17,7 +17,7 @@ describe('Circle', () => {
 /  describe('Square', () => {
     test('renders correctly', () => {
       const square = new Square("pink", "red", "SAD");
-      expect(square.render()).toEqual(`<svg height="200" width="300" version="1.1" xmlns="http://www.w3.org/2000/svg"><rect x = "0" y = "0" width="300" height= "200" fill="pink"/><text x="150" y="125" text-anchor="middle" font-size="80" fill="red">SAD</text></svg>`);
+      expect(square.render()).toEqual(`<svg height="200" width="300" version="1.1" xmlns="http://www.w3.org/2000/svg"><rect x = "40" y = "10" width="200" height= "200" fill="pink"/><text x="150" y="125" text-anchor="middle" font-size="60" fill="red">SAD</text></svg>`);
     })
 })
 

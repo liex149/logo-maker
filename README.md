@@ -1,6 +1,7 @@
 [<img src="https://img.shields.io/badge/License-MIT-yellow.svg">](https://opensource.org/licenses/MIT)
   # Logo Maker
   ![DEMO](picture/walktrhough.gif)
+[Walkthrough](https://drive.google.com/file/d/1b2JYWn5qMjHHCOn1I3ki9BJgjycxbh3L/view)
 
 ## Table of Content 
 
